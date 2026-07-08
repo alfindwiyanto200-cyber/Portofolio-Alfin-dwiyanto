@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Work | Alfin dwiyanto</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dennis-grey': '#999d9e',
+            'dennis-dark': '#1c1d20',
+            'dennis-blue': '#455ce9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased bg-white text-dennis-dark">
+  <!-- Page Transition Overlay -->
+  <div class="page-transition" id="page-transition">
+    <div class="page-transition-text">
+      <div class="dot"></div>
+      <span id="transition-title">Home</span>
+    </div>
+  </div>
+
+  <!-- Sticky Menu Button (Initially Hidden) -->
+  <div class="menu-button" data-purpose="sticky-menu">
+    <button class="w-16 h-16 md:w-20 md:h-20 bg-dennis-dark rounded-full flex flex-col items-center justify-center gap-1.5 shadow-xl group">
+      <span class="w-6 md:w-8 h-[2px] bg-white transition-all group-hover:w-4"></span>
+      <span class="w-6 md:w-8 h-[2px] bg-white transition-all group-hover:w-6"></span>
+    </button>
+  </div>
+
+  <section class="min-h-screen px-8 md:px-20 lg:px-32 py-8 flex flex-col">
+    <header class="flex justify-between items-center z-10 pb-16 md:pb-24">
+      <div class="text-dennis-dark text-lg font-medium"><a href="code.html">© Code by Alfin dwiyanto</a></div>
+      <nav class="hidden md:flex gap-8 text-dennis-dark text-base font-medium items-center">
+        <!-- Dot indicator for active page -->
+        <div class="flex flex-col items-center relative">
+          <a class="hover:opacity-70 transition-opacity" href="work.html">Work</a>
+          <span class="w-1.5 h-1.5 bg-dennis-dark rounded-full absolute -bottom-2"></span>
+        </div>
+        <a class="hover:opacity-70 transition-opacity" href="code.html#about">About</a>
+        <a class="hover:opacity-70 transition-opacity" href="code.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Title -->
+    <div class="w-full pt-4 md:pt-10 mb-12">
+      <h1 class="text-6xl md:text-[8rem] leading-[1.05] font-normal tracking-tight w-full reveal">
+        Creating next level<br class="hidden md:block"> digital products
+      </h1>
+    </div>
+
+    <!-- Filters & Toggles -->
+    <div class="w-full flex flex-col md:flex-row justify-between items-center gap-8 mb-20 reveal fade-right">
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-3 w-full md:w-auto justify-center md:justify-start">
+        <button class="px-8 md:px-10 py-3 md:py-4 bg-dennis-dark text-white rounded-[3rem] text-sm md:text-base hover:opacity-90 transition-opacity">
+          All
+        </button>
+        <button class="px-8 md:px-10 py-3 md:py-4 bg-white text-dennis-dark border border-zinc-200 rounded-[3rem] text-sm md:text-base hover:border-zinc-400 transition-colors">
+          Design <sup class="text-[10px] ml-1 text-zinc-500">7</sup>
+        </button>
+        <button class="px-8 md:px-10 py-3 md:py-4 bg-white text-dennis-dark border border-zinc-200 rounded-[3rem] text-sm md:text-base hover:border-zinc-400 transition-colors">
+          Development <sup class="text-[10px] ml-1 text-zinc-500">11</sup>
+        </button>
+      </div>
+
+      <!-- View Toggles -->
+      <div class="flex gap-4">
+        <!-- List View Active -->
+        <button class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-dennis-dark text-white flex flex-col justify-center items-center gap-1.5 hover:opacity-90 transition-opacity">
+          <span class="w-5 h-[1.5px] bg-white"></span>
+          <span class="w-5 h-[1.5px] bg-white"></span>
+          <span class="w-5 h-[1.5px] bg-white"></span>
+        </button>
+        <!-- Grid View Inactive -->
+        <button class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white border border-zinc-200 flex flex-wrap justify-center items-center content-center gap-[3px] hover:border-zinc-400 transition-colors">
+          <span class="w-[6px] h-[6px] border border-dennis-dark"></span>
+          <span class="w-[6px] h-[6px] border border-dennis-dark"></span>
+          <span class="w-[6px] h-[6px] border border-dennis-dark"></span>
+          <span class="w-[6px] h-[6px] border border-dennis-dark"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Table Header -->
+    <div class="w-full mb-4 reveal">
+      <div class="grid grid-cols-12 px-4 md:px-8 border-b border-zinc-200 pb-6 uppercase text-[10px] md:text-xs font-semibold tracking-widest text-zinc-400">
+        <div class="col-span-12 md:col-span-5 mb-4 md:mb-0">CLIENT</div>
+        <div class="col-span-12 md:col-span-3 mb-4 md:mb-0 hidden md:block">LOCATION</div>
+        <div class="col-span-12 md:col-span-3 mb-4 md:mb-0 hidden md:block">SERVICES</div>
+        <div class="col-span-12 md:col-span-1 text-left md:text-right hidden md:block">YEAR</div>
+      </div>
+      
+      <!-- Table Rows -->
+      <div class="flex flex-col">
+        <!-- Row 1 -->
+        <a href="project.html?id=twice" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">TWICE</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Spain</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Interaction & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2024</div>
+        </a>
+        <!-- Row 2 -->
+        <a href="project.html?id=damai" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">The Damai</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Bali, Indonesia</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2024</div>
+        </a>
+        <!-- Row 3 -->
+        <a href="project.html?id=fabric" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">FABRIC™</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">United Kingdom</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2023</div>
+        </a>
+        <!-- Row 4 -->
+        <a href="project.html?id=aanstekelijk" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">Aanstekelijk</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">The Netherlands</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2023</div>
+        </a>
+        <!-- Row 5 -->
+        <a href="project.html?id=base-create" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">Base Create</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Hong Kong</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2023</div>
+        </a>
+        <!-- Row 6 -->
+        <a href="project.html?id=avvr" class="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <div class="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">AVVR</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">The Netherlands</div>
+          <div class="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design & Development</div>
+          <div class="col-span-12 md:col-span-1 text-base md:text-lg text-left md:text-right mt-2 md:mt-0 text-zinc-600 md:text-dennis-dark">2023</div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Archive Button -->
+    <div class="w-full flex justify-center mt-20 mb-32 reveal">
+      <button class="px-10 py-5 bg-dennis-dark text-white rounded-[3rem] text-lg hover:opacity-90 transition-opacity flex items-center shadow-lg">
+        Archive <sup class="text-[10px] ml-1 text-zinc-400">66</sup>
+      </button>
+    </div>
+  </section>
+
+  <!-- Curve Transition -->
+  <div class="relative w-full h-12 md:h-24 bg-dennis-dark">
+    <div class="absolute top-0 left-0 w-full h-full bg-white" style="border-bottom-left-radius: 50% 100%; border-bottom-right-radius: 50% 100%;"></div>
+  </div>
+
+  <!-- BEGIN: Footer / Contact Section -->
+  <footer class="bg-dennis-dark text-white pt-16 pb-12 px-8 md:px-24" data-purpose="footer-contact" id="contact">
+    <div class="max-w-7xl mx-auto">
+      <!-- Call to Action -->
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-zinc-800 pb-24 mb-16 relative">
+        <div class="flex items-center gap-8 mb-12 md:mb-0">
+          <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden reveal">
+            <img alt="Dennis Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8IV0YdB8T-xpBCSERH6t_-LeWHd_6vSmVnNvhJp_kUUgO07elyjiCPFoNLVz71WDE2FxrwwK1d1F11jMnAY5FbaJUX6ZVYIAsMI-8mr0Nz7tDc1BlbuKMbo5hqF_eayFmjwhXoW-DP6wtuNqynpNqSmSwj8RzDvTfDeU4PM78-zWUJ0Dbe8w_CE5N0RaJjZ58Db3nz8JCIymOpMfWh1AIseGyu21D3nKE5AGQxmIpsHN867uCRwq1uth2ZSwI_RL8w">
+          </div>
+          <h2 class="text-6xl md:text-8xl font-normal leading-none reveal fade-right">Let's work<br>together</h2>
+        </div>
+        <div class="relative md:absolute md:right-0 md:-top-10 reveal">
+          <svg class="absolute -left-12 top-0 w-8 h-8 text-zinc-500 hidden md:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M17 7H7M17 7V17"></path>
+          </svg>
+          <button class="circle-btn w-44 h-44 md:w-56 md:h-56 bg-dennis-blue rounded-full flex items-center justify-center text-xl font-medium shadow-2xl">
+            Get in touch
+          </button>
+        </div>
+      </div>
+      <!-- Contact Info Buttons -->
+      <div class="flex flex-wrap gap-4 mb-32">
+        <a class="px-8 py-6 rounded-full border border-zinc-700 hover:border-white transition-colors text-lg" href="mailto:info@dennissnellenberg.com">
+          info@dennissnellenberg.com
+        </a>
+        <a class="px-8 py-6 rounded-full border border-zinc-700 hover:border-white transition-colors text-lg" href="tel:+31627847430">
+          +31 6 27 84 74 30
+        </a>
+      </div>
+      <!-- Footer Metadata -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 text-sm text-zinc-500">
+        <div>
+          <p class="uppercase text-xs tracking-widest mb-4">Version</p>
+          <p class="text-white text-base">2022 © Edition</p>
+        </div>
+        <div>
+          <p class="uppercase text-xs tracking-widest mb-4">Local Time</p>
+          <p class="text-white text-base" id="local-time">05:35 PM GMT+2</p>
+        </div>
+        <div class="md:col-span-2">
+          <p class="uppercase text-xs tracking-widest mb-4">Socials</p>
+          <div class="flex gap-8 text-white text-base">
+            <a class="hover:opacity-70" href="#">Awwwards</a>
+            <a class="hover:opacity-70" href="#">Instagram</a>
+            <a class="hover:opacity-70" href="#">Twitter</a>
+            <a class="hover:opacity-70" href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer / Contact Section -->
+
+  <script src="script.js"></script>
+</body>
+</html>
