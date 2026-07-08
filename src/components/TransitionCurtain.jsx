@@ -5,7 +5,7 @@ export default function TransitionCurtain({ children }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
-  const [animationClass, setAnimationClass] = useState('slide-out');
+  const [animationClass, setAnimationClass] = useState('');
   const [pendingRoute, setPendingRoute] = useState(null);
 
   // Hook into all anchor tags dynamically or handle routing programmatically
