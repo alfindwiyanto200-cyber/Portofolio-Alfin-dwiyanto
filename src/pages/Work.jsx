@@ -1,17 +1,19 @@
-import { Link } from 'react-router-dom';
+import TransitionLink from '../components/TransitionLink';
 import Header from '../components/Header';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 export default function Work() {
+  useScrollReveal();
   return (
     <>
       <Header />
       <div className="w-full pt-4 md:pt-10 mb-12 px-8 md:px-20 lg:px-32">
-        <h1 className="text-6xl md:text-[8rem] leading-[1.05] font-normal tracking-tight w-full reveal active">
+        <h1 className="text-6xl md:text-[8rem] leading-[1.05] font-normal tracking-tight w-full reveal">
           Creating next level<br className="hidden md:block" /> digital products
         </h1>
       </div>
 
-      <div className="w-full px-8 md:px-20 lg:px-32 flex flex-col md:flex-row justify-between items-center gap-8 mb-20 reveal active fade-right">
+      <div className="w-full px-8 md:px-20 lg:px-32 flex flex-col md:flex-row justify-between items-center gap-8 mb-20 reveal fade-right">
         <div className="flex flex-wrap gap-3 w-full md:w-auto justify-center md:justify-start">
           <button className="px-8 md:px-10 py-3 md:py-4 bg-dennis-dark text-white rounded-[3rem] text-sm md:text-base hover:opacity-90 transition-opacity">
             All
@@ -22,7 +24,7 @@ export default function Work() {
         </div>
       </div>
 
-      <div className="w-full px-8 md:px-20 lg:px-32 flex flex-col gap-8 text-[10px] md:text-xs text-zinc-400 uppercase tracking-widest font-semibold border-b border-zinc-300 pb-6 reveal active">
+      <div className="w-full px-8 md:px-20 lg:px-32 flex flex-col gap-8 text-[10px] md:text-xs text-zinc-400 uppercase tracking-widest font-semibold border-b border-zinc-300 pb-6 reveal">
         <div className="grid grid-cols-12 px-4 md:px-8">
           <div className="col-span-12 md:col-span-5">Client</div>
           <div className="col-span-12 md:col-span-3 hidden md:block">Location</div>
@@ -33,12 +35,12 @@ export default function Work() {
 
       <div className="flex flex-col w-full px-8 md:px-20 lg:px-32">
         {['twice', 'damai', 'fabric'].map(id => (
-          <Link key={id} to={`/project?id=${id}`} className="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors">
+          <TransitionLink key={id} to={`/project?id=${id}`} className="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors reveal">
             <div className="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500 capitalize">{id}</div>
             <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Location</div>
             <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design</div>
             <div className="col-span-12 md:col-span-1 text-base md:text-lg text-zinc-500 md:text-right hidden md:block">2024</div>
-          </Link>
+          </TransitionLink>
         ))}
       </div>
       

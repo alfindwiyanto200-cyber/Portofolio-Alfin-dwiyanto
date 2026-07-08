@@ -12,23 +12,20 @@ export default function TransitionCurtain({ children }) {
   // In a real app with framer motion this is easier, but here we replicate the CSS transitions.
 
   useEffect(() => {
-    const handleLinkClick = (e) => {
-      const link = e.target.closest('a');
-      if (link && link.href && !link.href.includes('#') && link.origin === window.location.origin) {
-        e.preventDefault();
-        const url = new URL(link.href);
-        const path = url.pathname + url.search;
-        
-        if (path !== location.pathname + location.search) {
-          setTitle(link.innerText.trim() || 'Loading');
-          setAnimationClass('slide-in-active');
-          setPendingRoute(path);
-        }
+    const handleTransitionEvent = (e) => {
+      const { url, title } = e.detail;
+      const urlObj = new URL(url, window.location.origin);
+      const path = urlObj.pathname + urlObj.search;
+      
+      if (path !== location.pathname + location.search) {
+        setTitle(title || 'Loading');
+        setAnimationClass('slide-in-active');
+        setPendingRoute(path);
       }
     };
 
-    document.addEventListener('click', handleLinkClick);
-    return () => document.removeEventListener('click', handleLinkClick);
+    window.addEventListener('trigger-transition', handleTransitionEvent);
+    return () => window.removeEventListener('trigger-transition', handleTransitionEvent);
   }, [location]);
 
   useEffect(() => {

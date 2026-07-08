@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import TransitionLink from '../components/TransitionLink';
 import Header from '../components/Header';
 import { useEffect, useRef } from 'react';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 export default function Home() {
   const row1Ref = useRef(null);
   const row2Ref = useRef(null);
+  useScrollReveal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +26,7 @@ export default function Home() {
         <Header />
         
         <div className="absolute bottom-0 md:-bottom-12 left-0 w-full z-10 flex justify-center pointer-events-none">
-          <div className="reveal active">
+          <div className="reveal">
             <img 
               alt="Dennis Snellenberg" 
               className="w-96 md:w-[60rem] max-w-none max-h-[90vh] h-auto object-contain pointer-events-auto" 
@@ -33,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="absolute right-8 md:right-12 top-32 md:top-48 text-right z-10 reveal active fade-right">
+        <div className="absolute right-8 md:right-12 top-32 md:top-48 text-right z-10 reveal fade-right">
           <div className="flex flex-col gap-1">
             <span className="text-white text-xl md:text-3xl font-normal leading-tight">Freelance</span>
             <span className="text-white text-xl md:text-3xl font-normal leading-tight">Designer & Developer</span>
@@ -52,12 +54,12 @@ export default function Home() {
       {/* Intro Section */}
       <section className="py-32 md:py-60 px-8 bg-white" data-purpose="intro-about" id="about">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-          <div className="md:col-span-8 reveal active fade-left">
+          <div className="md:col-span-8 reveal fade-left">
             <h2 className="text-3xl md:text-5xl leading-tight font-normal text-dennis-dark">
               Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.
             </h2>
           </div>
-          <div className="md:col-span-4 reveal active fade-right">
+          <div className="md:col-span-4 reveal fade-right">
             <p className="text-lg text-zinc-600 mb-12">
               The combination of my passion for design, code & interaction positions me in a unique place in the web design world.
             </p>
@@ -76,29 +78,29 @@ export default function Home() {
           <p className="text-zinc-400 text-sm font-medium uppercase tracking-widest">Recent Work</p>
         </div>
         <div className="border-t border-zinc-200">
-          <Link className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal active" to="/project?id=twice">
+          <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=twice">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
               <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">TWICE</h3>
               <span className="text-lg text-dennis-dark">Interaction & Development</span>
             </div>
-          </Link>
-          <Link className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal active" to="/project?id=damai">
+          </TransitionLink>
+          <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=damai">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
               <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">The Damai</h3>
               <span className="text-lg text-dennis-dark">Design & Development</span>
             </div>
-          </Link>
-          <Link className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal active" to="/project?id=fabric">
+          </TransitionLink>
+          <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=fabric">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
               <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">FABRIC™</h3>
               <span className="text-lg text-dennis-dark">Design & Development</span>
             </div>
-          </Link>
+          </TransitionLink>
         </div>
         <div className="flex justify-center py-24">
-          <Link className="px-12 py-6 border border-zinc-300 rounded-full text-lg hover:bg-dennis-dark hover:text-white transition-colors relative" to="/work">
+          <TransitionLink className="px-12 py-6 border border-zinc-300 rounded-full text-lg hover:bg-dennis-dark hover:text-white transition-colors relative" to="/work">
             More work <sup className="text-xs opacity-60">11</sup>
-          </Link>
+          </TransitionLink>
         </div>
       </section>
 
