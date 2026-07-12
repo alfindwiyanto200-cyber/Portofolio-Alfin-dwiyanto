@@ -5,6 +5,7 @@ export const PROJECT_DATA = {
     credits: 'Design: ALFIN DWIYANTO',
     locationYear: 'INDONESIA © 2025',
     liveLink: 'https://serasasejiwa.com',
+    imageLayout: 'grid-3',
     images: [
       '/serasa-sejiwa-motion.gif',
       '/artboard-1.gif',
