@@ -6,7 +6,10 @@ export const PROJECT_DATA = {
     locationYear: 'INDONESIA © 2025',
     liveLink: 'https://serasasejiwa.com',
     images: [
-      '/serasa-sejiwa-motion.gif'
+      '/serasa-sejiwa-motion.gif',
+      '/artboard-1.gif',
+      '/artboard-5.gif',
+      '/artboard-6.gif'
     ]
   },
   'twice': {
