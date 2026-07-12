@@ -10,7 +10,9 @@ export const PROJECT_DATA = {
       '/serasa-sejiwa-motion.gif',
       '/artboard-1.gif',
       '/artboard-5.gif',
-      '/artboard-6.gif'
+      '/artboard-6.gif',
+      '/artboard-2.gif',
+      '/artboard-7.gif'
     ]
   },
   'twice': {
