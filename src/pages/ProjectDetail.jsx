@@ -8,7 +8,7 @@ export default function ProjectDetail() {
   const location = useLocation();
   const navigate = useNavigate();
   const [project, setProject] = useState(null);
-  useScrollReveal();
+  useScrollReveal([project]);
 
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
