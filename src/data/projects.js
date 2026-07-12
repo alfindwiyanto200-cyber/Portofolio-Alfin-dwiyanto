@@ -1,4 +1,14 @@
 export const PROJECT_DATA = {
+  'serasasejiwa': {
+    title: 'SERASA SEJIWA',
+    role: 'Design & Development',
+    credits: 'Branding: Serasa Team',
+    locationYear: 'Indonesia © 2024',
+    liveLink: '#',
+    images: [
+      '/serasa-sejiwa-motion.gif'
+    ]
+  },
   'twice': {
     title: 'TWICE',
     role: 'Interaction & Development',

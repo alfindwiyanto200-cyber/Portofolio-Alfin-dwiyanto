@@ -80,7 +80,7 @@ export default function Home() {
         <div className="border-t border-zinc-200">
           <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=twice">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
-              <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">TWICE</h3>
+              <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">SERASASEJIWA</h3>
               <span className="text-lg text-dennis-dark">Interaction & Development</span>
             </div>
           </TransitionLink>
