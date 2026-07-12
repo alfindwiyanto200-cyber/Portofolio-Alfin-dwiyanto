@@ -56,12 +56,12 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-8 reveal fade-left">
             <h2 className="text-3xl md:text-5xl leading-tight font-normal text-dennis-dark">
-              Membantu brand Anda tampil menonjol di era digital. Membangun identitas yang kuat, dari visual hingga pengalaman website.
+              Berbekal pengalaman di bidang digital marketing, desain grafis, dan fotografi produk, saya memadukan estetika visual dengan keahlian web coding untuk menciptakan kehadiran digital yang utuh bagi bisnis Anda.
             </h2>
           </div>
           <div className="md:col-span-4 reveal fade-right">
             <p className="text-lg text-zinc-600 mb-12">
-              Berbekal pengalaman di bidang digital marketing, desain grafis, dan fotografi produk, saya memadukan estetika visual dengan keahlian web coding untuk menciptakan kehadiran digital yang utuh bagi bisnis Anda.
+              Membantu brand Anda tampil menonjol di era digital. Membangun identitas yang kuat, dari visual hingga pengalaman website.
             </p>
             <div className="flex">
               <a className="circle-btn w-40 h-40 md:w-48 md:h-48 bg-dennis-blue rounded-full flex items-center justify-center text-white text-lg font-medium" href="#">
