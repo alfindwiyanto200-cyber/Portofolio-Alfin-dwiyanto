@@ -1,21 +1,36 @@
+import { useState } from 'react';
 import TransitionLink from '../components/TransitionLink';
 import Header from '../components/Header';
 import useScrollReveal from '../hooks/useScrollReveal';
 import { PROJECT_DATA } from '../data/projects';
 
 export default function Work() {
-  useScrollReveal();
+  const [activeFilter, setActiveFilter] = useState('all');
+  useScrollReveal([activeFilter]);
 
   const workItems = [
     { id: 'serasasejiwa', location: 'Indonesia', year: '2025' },
-    { id: 'hithat',       location: 'Bandung, Indonesia', year: '2026' },
-    { id: 'rujack',       location: 'Garut, Indonesia',   year: '2026' },
-    { id: 'machain',      location: 'Indonesia', year: '2023' },
-    { id: 'twice',        location: 'Spain',     year: '2024' },
-    { id: 'aanstekelijk', location: 'Netherlands', year: '2023' },
-    { id: 'base-create',  location: 'Hong Kong', year: '2023' },
-    { id: 'avvr',         location: 'Netherlands', year: '2023' },
+    { id: 'hithat',             location: 'Bandung, Indonesia', year: '2026' },
+    { id: 'rujack',             location: 'Garut, Indonesia',   year: '2026' },
+    { id: 'diameter-coffee',    location: 'Bandung, Indonesia', year: '2026' },
+    { id: 'bakmi-ponyo',        location: 'Bandung, Indonesia', year: '2026' },
+    { id: 'jaket-kulit-garut',  location: 'Garut, Indonesia',   year: '2026' },
+    { id: 'bittersweet',        location: 'Bandung, Indonesia', year: '2026' },
+    { id: 'warung-katenjo',     location: 'Garut, Indonesia',   year: '2026' },
+    { id: 'machain',            location: 'Indonesia', year: '2023' },
+    { id: 'twice',              location: 'Spain',     year: '2024' },
+    { id: 'aanstekelijk',       location: 'Netherlands', year: '2023' },
+    { id: 'base-create',        location: 'Hong Kong', year: '2023' },
+    { id: 'avvr',               location: 'Netherlands', year: '2023' },
   ];
+
+  const designCount = workItems.filter(({ id }) => PROJECT_DATA[id]?.category === 'design').length;
+  const fotoCount   = workItems.filter(({ id }) => PROJECT_DATA[id]?.category === 'foto-produk').length;
+
+  const filtered = workItems.filter(({ id }) => {
+    if (activeFilter === 'all') return true;
+    return PROJECT_DATA[id]?.category === activeFilter;
+  });
 
   return (
     <>
@@ -28,11 +43,35 @@ export default function Work() {
 
       <div className="w-full px-8 md:px-20 lg:px-32 flex flex-col md:flex-row justify-between items-center gap-8 mb-20 reveal fade-right">
         <div className="flex flex-wrap gap-3 w-full md:w-auto justify-center md:justify-start">
-          <button className="px-8 md:px-10 py-3 md:py-4 bg-dennis-dark text-white rounded-[3rem] text-sm md:text-base hover:opacity-90 transition-opacity">
+          <button
+            onClick={() => setActiveFilter('all')}
+            className={`px-8 md:px-10 py-3 md:py-4 rounded-[3rem] text-sm md:text-base transition-all duration-300 ${
+              activeFilter === 'all'
+                ? 'bg-dennis-dark text-white'
+                : 'bg-white text-dennis-dark border border-zinc-200 hover:border-zinc-400'
+            }`}
+          >
             All
           </button>
-          <button className="px-8 md:px-10 py-3 md:py-4 bg-white text-dennis-dark border border-zinc-200 rounded-[3rem] text-sm md:text-base hover:border-zinc-400 transition-colors">
-            Design <sup className="text-[10px] ml-1 text-zinc-500">7</sup>
+          <button
+            onClick={() => setActiveFilter('design')}
+            className={`px-8 md:px-10 py-3 md:py-4 rounded-[3rem] text-sm md:text-base transition-all duration-300 ${
+              activeFilter === 'design'
+                ? 'bg-dennis-dark text-white'
+                : 'bg-white text-dennis-dark border border-zinc-200 hover:border-zinc-400'
+            }`}
+          >
+            Design <sup className="text-[10px] ml-1 opacity-60">{designCount}</sup>
+          </button>
+          <button
+            onClick={() => setActiveFilter('foto-produk')}
+            className={`px-8 md:px-10 py-3 md:py-4 rounded-[3rem] text-sm md:text-base transition-all duration-300 ${
+              activeFilter === 'foto-produk'
+                ? 'bg-dennis-dark text-white'
+                : 'bg-white text-dennis-dark border border-zinc-200 hover:border-zinc-400'
+            }`}
+          >
+            Foto Produk <sup className="text-[10px] ml-1 opacity-60">{fotoCount}</sup>
           </button>
         </div>
       </div>
@@ -47,7 +86,7 @@ export default function Work() {
       </div>
 
       <div className="flex flex-col w-full px-8 md:px-20 lg:px-32">
-        {workItems.map(({ id, location, year }) => {
+        {filtered.map(({ id, location, year }) => {
           const project = PROJECT_DATA[id];
           if (!project) return null;
           return (
