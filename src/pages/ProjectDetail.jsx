@@ -61,23 +61,13 @@ export default function ProjectDetail() {
         </div>
 
         <div className="w-full bg-[#cbd0cd] py-24 md:py-40 px-4 md:px-12 lg:px-24 flex flex-col items-center min-h-[50vh]">
-          {project.imageLayout === 'grid-3' ? (
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1800px] mx-auto">
-              {project.images.map((img, i) => (
-                <div key={i} className="w-full reveal fade-up aspect-[4/5]">
-                  <img src={img} className="w-full h-full object-cover rounded-lg shadow-xl" alt={`${project.title} screenshot ${i}`} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="w-full flex flex-col gap-12 items-center">
-              {project.images.map((img, i) => (
-                <div key={i} className="w-full reveal">
-                  <img src={img} className="w-full h-auto max-h-[80vh] object-cover rounded-lg shadow-xl" alt={`${project.title} screenshot ${i}`} />
-                </div>
-              ))}
-            </div>
-          )}
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1800px] mx-auto">
+            {project.images.map((img, i) => (
+              <div key={i} className="w-full reveal fade-up aspect-[4/5]">
+                <img src={img} className="w-full h-full object-cover rounded-lg shadow-xl" alt={`${project.title} screenshot ${i}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       
