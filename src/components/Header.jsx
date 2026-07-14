@@ -17,7 +17,7 @@ export default function Header() {
           {isWork && <span className="w-1.5 h-1.5 bg-dennis-dark rounded-full absolute -bottom-2"></span>}
         </div>
         <div className="flex flex-col items-center relative">
-          <TransitionLink className="hover:opacity-70 transition-opacity" to="/#about">About</TransitionLink>
+          <TransitionLink className="hover:opacity-70 transition-opacity" to="/about">About</TransitionLink>
           {isAbout && <span className="w-1.5 h-1.5 bg-dennis-dark rounded-full absolute -bottom-2"></span>}
         </div>
         <TransitionLink className="hover:opacity-70 transition-opacity" to="/#contact">Contact</TransitionLink>

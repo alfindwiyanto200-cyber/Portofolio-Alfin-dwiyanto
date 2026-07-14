@@ -7,6 +7,7 @@ import TransitionCurtain from './components/TransitionCurtain';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import ProjectDetail from './pages/ProjectDetail';
+import About from './pages/About';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
           <Route path="/project" element={<ProjectDetail />} />
+          <Route path="/about" element={<About />} />
         </Routes>
 
         <Footer />
