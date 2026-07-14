@@ -28,13 +28,30 @@ export const PROJECT_DATA = {
   },
   'hithat': {
     title: 'HITHAT',
-    role: 'Design & Development',
+    role: 'BRAND IDENTITY & Design',
     credits: 'Design: ALFIN DWIYANTO',
-    locationYear: 'Indonesia © 2024',
+    locationYear: 'Bandung, Indonesia © 2026',
     liveLink: '#',
     images: [
-      'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2000&q=80',
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80'
+      '/hithat-5.png',
+      '/hithat-1.png',
+      '/hithat-2.png',
+      '/hithat-3.png',
+      '/hithat-4.png'
+    ]
+  },
+  'rujack': {
+    title: 'Rujack',
+    role: 'BRAND IDENTITY & Design',
+    credits: 'Design: ALFIN DWIYANTO',
+    locationYear: 'Garut, Indonesia © 2026',
+    liveLink: '#',
+    images: [
+      '/rujack-1.png',
+      '/rujack-2.png',
+      '/rujack-3.png',
+      '/rujack-4.png',
+      '/rujack-5.png'
     ]
   },
   'machain': {

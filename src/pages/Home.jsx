@@ -87,19 +87,19 @@ export default function Home() {
           <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=hithat">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
               <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">HITHAT</h3>
-              <span className="text-lg text-dennis-dark">Design & Development</span>
+              <span className="text-lg text-dennis-dark">BRAND IDENTITY & Design</span>
             </div>
           </TransitionLink>
-          <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=machain">
+          <TransitionLink className="group block border-b border-zinc-200 hover:px-12 transition-all duration-500 py-12 px-8 reveal" to="/project?id=rujack">
             <div className="flex justify-between items-center max-w-7xl mx-auto">
-              <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">macha.in</h3>
-              <span className="text-lg text-dennis-dark">Design & Development</span>
+              <h3 className="text-6xl md:text-8xl font-normal group-hover:text-zinc-400 transition-colors">Rujack</h3>
+              <span className="text-lg text-dennis-dark">BRAND IDENTITY & Design</span>
             </div>
           </TransitionLink>
         </div>
         <div className="flex justify-center py-24">
           <TransitionLink className="px-12 py-6 border border-zinc-300 rounded-full text-lg hover:bg-dennis-dark hover:text-white transition-colors relative" to="/work">
-            More work <sup className="text-xs opacity-60">11</sup>
+            More work <sup className="text-xs opacity-60">12</sup>
           </TransitionLink>
         </div>
       </section>
@@ -108,30 +108,30 @@ export default function Home() {
       <div className="py-12 bg-white overflow-hidden flex flex-col gap-8 md:gap-12 pb-32" id="marquee-projects">
         <div className="scroll-marquee-wrapper" id="row-1" ref={row1Ref}>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 3" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNpVlPYYNCJV1GgbxkVN7vXRUQ3on54dzeMO4UmFc6ZAArku10qCNZjn8HRGoCPLWTJJ9e-KEcDBjo_CjYs4RCnNmkH0tZkCi1tvu5xNwuaXtnRGn2hUoeC_KF4dfXfST7FBRfSqBTOQDIVS3nmK80clmdVVujzwXLmy6ckJGCukRmMrhrlUrFiZgEajorrBYgpnvha2141Mwwr_SNL2djClKebmVOCXr2mTnjlh-tSD2gN2LQIJcwLi73OR5nSz_EfA" />
+            <img alt="HITHAT Padel Club" className="w-full h-full object-cover" src="/hithat-5.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 4" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTcqSk98KySHDKWrrLTW6YzEw-WC6FXovLIejjmJ0_4VbvwTamGaApX8nGz3gbYXzfkctcJjfWci9-lqUYakEQ1Fky1_QvvaK6XnnFLDmLxvIC73PiIjGTMFUjxeduvy62bTNSbgtDSIqB1si6ROGKK3MKeiBOILHKhUl1ZD0gvNnpl-cvTYMAI9sFZ8lhUJdk84IxOHwKtasLKhbgsLpcvV9Jbn66LJS8hzwKq-cJbc3HJdaAP79is5JdUPVWsp1G9g" />
+            <img alt="HITHAT Cap" className="w-full h-full object-cover" src="/hithat-1.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 5" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjpsIGCmHxIRuAgBLj4i6V1EySI61kmsvf1PAL7Eg6Sn0Zk8uJpp1YOuMG8Axt4FFuejQgXF-WzqW3Z1-NWeNBlE9bKrjWqTJJj7y43TCiYbcfv_8YeDOA5FWQwSmMkZr2gI5KVEE-Hgs8CJRrjSZdobxyowXTmxcJN-yptefJoGaYyh7WTR48I77fSd87kkiUmFfJmXs0IamAWcSFF8kaJsU84KcnHp7Ior7EbTPi2fs9jXNl3rygV1_ENFI--bgow" />
+            <img alt="HITHAT Apparel" className="w-full h-full object-cover" src="/hithat-2.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 3 Duplicate" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzcmgo3S_4-Ikztmit60goKMtWpQXs9j-VXatweLHvm68us1-A6P7Da0yO3wsWnOm6LF59uoR1TxLWfHelNyr9mk3S92RvZ5cOwPjEaeqwJhtnXqUnl9OM59rvCAKtzngtFF2RQyzAIQ7sbQJ1WlGEryaXKVfwUZDKKLUVIqIw3Elk2NdIn7TprR7L_3VTn8NqHUPnnP8h-RO5xnXBI5vml1jyRbFNx4ffz0oujOq5KCyMDYdPqb97EcnE2_Nzv45IPw" />
+            <img alt="HITHAT Polo" className="w-full h-full object-cover" src="/hithat-3.png" />
           </div>
         </div>
         <div className="scroll-marquee-wrapper flex-row-reverse" id="row-2" ref={row2Ref}>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 6" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5pG9VhQ4AzYBIqTxNcWh5sooTd2LKhSwbr9pbaviJ2tSVywc4AA7cgVhNCWGDSmFO4F_t9v2jxxcmQhwgNAZQCjdtNtKwYzWLtOYOkS_uLw4QkIflKu4JlGe2HLeBrfgEnoWyo4CO9oLXWn9UaEknguRMYUeHEzwhGtNK6E5kpYdi4O9aIgQAVFmT8A1V_BL-Qsw4OSJygQsJw-b_Ud40TXoDmx31vefK316GT1RdnOAeSyaDsbm64CnzkAnI_1Dj4Q" />
+            <img alt="Rujack Food" className="w-full h-full object-cover" src="/rujack-1.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 7" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEEI61L9CxF8Ra_MD3bPnCG8KyMS9byNBNPW9N09S8XKTJ00rMO-x3CXpzFdvRHRwYDFnrBFEi4Ag8jl7Q1iQPqK6KYydc5m_HNLQJHEPvPddduaSX_3PZcZxzIOiKdoDsaM9J_ZiDR8GC2O-Xn_Yk5i5nA_v7QpUcu1wyyq9xXpLLvY8cPxLf41e5_RnQnEwxjZ_vJTrEgxjR_93qVqzYkt8dpcvKhUChiTnp5b4mqyAZdWTFvRongMoQ9vwJ-hTUPA" />
+            <img alt="Rujack Menu" className="w-full h-full object-cover" src="/rujack-2.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 8" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4nBzR_c8J1I8JJ86VXH031DFvNcklRmwGxdkj9kggY7loCKfrwJKJv8tstzPy1kJ7TYBFzRr50sNpcfPqKAGzakmREcFB9GuyWZt-a-SqAELoSHZoRYS9k8nTlZEq0CB9AptoAT-Evl0ir6eP4SKLBMy1rNljmj_MkIpSCWXrS33huzWtjP1yGykdGrz4KDBcmjgWqio4RwKI0cJCwy0dg3SewvwQ00fNf5CCB2O_yGRGpqkACABBth_dW77HAp0vUg" />
+            <img alt="Rujack Branding" className="w-full h-full object-cover" src="/rujack-3.png" />
           </div>
           <div className="scroll-marquee-item bg-zinc-100 aspect-video overflow-hidden">
-            <img alt="Project 6 Duplicate" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5pG9VhQ4AzYBIqTxNcWh5sooTd2LKhSwbr9pbaviJ2tSVywc4AA7cgVhNCWGDSmFO4F_t9v2jxxcmQhwgNAZQCjdtNtKwYzWLtOYOkS_uLw4QkIflKu4JlGe2HLeBrfgEnoWyo4CO9oLXWn9UaEknguRMYUeHEzwhGtNK6E5kpYdi4O9aIgQAVFmT8A1V_BL-Qsw4OSJygQsJw-b_Ud40TXoDmx31vefK316GT1RdnOAeSyaDsbm64CnzkAnI_1Dj4Q" />
+            <img alt="Rujack Visual" className="w-full h-full object-cover" src="/rujack-4.png" />
           </div>
         </div>
       </div>

@@ -1,9 +1,22 @@
 import TransitionLink from '../components/TransitionLink';
 import Header from '../components/Header';
 import useScrollReveal from '../hooks/useScrollReveal';
+import { PROJECT_DATA } from '../data/projects';
 
 export default function Work() {
   useScrollReveal();
+
+  const workItems = [
+    { id: 'serasasejiwa', location: 'Indonesia', year: '2025' },
+    { id: 'hithat',       location: 'Bandung, Indonesia', year: '2026' },
+    { id: 'rujack',       location: 'Garut, Indonesia',   year: '2026' },
+    { id: 'machain',      location: 'Indonesia', year: '2023' },
+    { id: 'twice',        location: 'Spain',     year: '2024' },
+    { id: 'aanstekelijk', location: 'Netherlands', year: '2023' },
+    { id: 'base-create',  location: 'Hong Kong', year: '2023' },
+    { id: 'avvr',         location: 'Netherlands', year: '2023' },
+  ];
+
   return (
     <>
       <Header />
@@ -34,14 +47,18 @@ export default function Work() {
       </div>
 
       <div className="flex flex-col w-full px-8 md:px-20 lg:px-32">
-        {['twice', 'damai', 'fabric'].map(id => (
-          <TransitionLink key={id} to={`/project?id=${id}`} className="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors reveal">
-            <div className="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500 capitalize">{id}</div>
-            <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Location</div>
-            <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">Design</div>
-            <div className="col-span-12 md:col-span-1 text-base md:text-lg text-zinc-500 md:text-right hidden md:block">2024</div>
-          </TransitionLink>
-        ))}
+        {workItems.map(({ id, location, year }) => {
+          const project = PROJECT_DATA[id];
+          if (!project) return null;
+          return (
+            <TransitionLink key={id} to={`/project?id=${id}`} className="group grid grid-cols-12 px-4 md:px-8 py-8 md:py-12 border-b border-zinc-200 items-center hover:bg-zinc-50 transition-colors reveal">
+              <div className="col-span-12 md:col-span-5 mb-4 md:mb-0 text-4xl md:text-[3.25rem] font-normal md:group-hover:translate-x-6 transition-transform duration-500">{project.title}</div>
+              <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">{location}</div>
+              <div className="col-span-12 md:col-span-3 text-base md:text-lg text-zinc-600 md:text-dennis-dark">{project.role}</div>
+              <div className="col-span-12 md:col-span-1 text-base md:text-lg text-zinc-500 md:text-right hidden md:block">{year}</div>
+            </TransitionLink>
+          );
+        })}
       </div>
       
       {/* Curve Transition */}
