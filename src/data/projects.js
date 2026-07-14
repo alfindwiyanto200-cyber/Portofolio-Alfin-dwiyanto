@@ -26,23 +26,23 @@ export const PROJECT_DATA = {
       'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80'
     ]
   },
-  'damai': {
-    title: 'The Damai',
+  'hithat': {
+    title: 'HITHAT',
     role: 'Design & Development',
-    credits: 'Photography: Studio XYZ',
-    locationYear: 'Bali, Indonesia © 2024',
-    liveLink: 'https://thedamai.com',
+    credits: 'Design: ALFIN DWIYANTO',
+    locationYear: 'Indonesia © 2024',
+    liveLink: '#',
     images: [
       'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2000&q=80',
       'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80'
     ]
   },
-  'fabric': {
-    title: 'FABRIC™',
+  'machain': {
+    title: 'macha.in',
     role: 'Design & Development',
-    credits: 'Art Direction: Sarah Jenkins',
-    locationYear: 'United Kingdom © 2023',
-    liveLink: 'https://fabric.com',
+    credits: 'Design: ALFIN DWIYANTO',
+    locationYear: 'Indonesia © 2023',
+    liveLink: '#',
     images: [
       'https://images.unsplash.com/photo-1581392723652-3312c4ce0e4b?auto=format&fit=crop&w=2000&q=80'
     ]
