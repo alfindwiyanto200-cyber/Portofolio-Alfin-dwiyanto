@@ -60,11 +60,11 @@ export const PROJECT_DATA = {
   },
   'machain': {
     title: 'macha.in',
-    role: 'Foto Produk & Design',
+    role: 'Design & Development',
     credits: 'Design: ALFIN DWIYANTO',
     locationYear: 'Indonesia © 2023',
     liveLink: '#',
-    category: 'foto-produk',
+    category: 'design',
     images: [
       '/machain-1.png',
       '/machain-2.png',
