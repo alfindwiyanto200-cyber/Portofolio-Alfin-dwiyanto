@@ -19,10 +19,15 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-5 reveal fade-left">
-              <p className="text-xl md:text-2xl leading-relaxed text-zinc-700 mb-6">
-                I help businesses from all over the world with tailor-made solutions. With each project, I push my work to new horizons, always putting quality first.
+              <p className="text-lg md:text-xl leading-relaxed text-zinc-700 mb-6">
+                Saya <strong>Alfin Dwiyanto</strong>, seorang Graphic Designer dengan pengalaman lebih dari 5 tahun dalam menciptakan solusi visual yang kreatif, fungsional, dan berorientasi pada tujuan bisnis. Saya memiliki pengalaman mengerjakan berbagai kebutuhan desain, mulai dari branding, brand identity, social media, digital marketing assets, hingga UI visual untuk berbagai perusahaan dan klien dari beragam industri.
               </p>
-              <p className="text-zinc-400 text-lg italic">Always exploring...</p>
+              <p className="text-lg md:text-xl leading-relaxed text-zinc-700 mb-6">
+                Seiring berkembangnya dunia digital, saat ini saya juga sedang memperdalam Front-End Development dan Vibe Coding untuk menggabungkan kemampuan desain dengan implementasi web yang modern. Saya telah merancang dan membangun website untuk beberapa perusahaan, dengan fokus pada tampilan yang responsif, pengalaman pengguna (UI/UX) yang optimal, serta performa yang baik.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed text-zinc-500 italic">
+                Saya percaya bahwa desain bukan hanya tentang estetika, tetapi juga tentang bagaimana sebuah produk mampu menyampaikan pesan, membangun kepercayaan, dan memberikan pengalaman terbaik bagi pengguna.
+              </p>
             </div>
             <div className="md:col-span-7 reveal fade-right">
               <div className="w-full aspect-[3/4] bg-zinc-100 rounded-2xl overflow-hidden">
@@ -101,10 +106,10 @@ export default function About() {
           <div className="reveal fade-right">
             <p className="text-zinc-400 text-xs uppercase tracking-widest mb-8">Background</p>
             <p className="text-2xl md:text-3xl font-normal leading-snug text-dennis-dark mb-8">
-              Seorang freelance designer & fotografer produk berbasis di Bandung, dengan latar belakang digital marketing dan brand identity.
+              Graphic Designer & Front-End Developer berbasis di Bandung, dengan pengalaman 5+ tahun di dunia visual dan digital.
             </p>
             <p className="text-zinc-500 text-lg leading-relaxed">
-              Berbekal pengalaman yang beragam — dari desain grafis, fotografi produk, hingga web development — saya memadukan estetika visual dengan keahlian teknis untuk menciptakan brand yang utuh dan berkesan.
+              Dengan kemampuan komunikasi yang baik, cepat beradaptasi, dan senang mempelajari teknologi baru, saya siap berkolaborasi dalam menciptakan solusi digital yang berdampak dan bernilai.
             </p>
           </div>
         </div>
