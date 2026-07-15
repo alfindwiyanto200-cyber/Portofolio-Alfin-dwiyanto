@@ -14,7 +14,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <p className="text-zinc-400 text-sm font-medium uppercase tracking-widest mb-6 reveal">About me</p>
           <h1 className="text-5xl md:text-[7rem] leading-[1.05] font-normal tracking-tight mb-16 reveal fade-left">
-            Helping brands thrive<br className="hidden md:block" /> in the digital world
+            Designing brands.<br className="hidden md:block" /> Building digital experiences.
           </h1>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
