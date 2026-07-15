@@ -25,11 +25,12 @@ export default function About() {
               <p className="text-zinc-400 text-lg italic">Always exploring...</p>
             </div>
             <div className="md:col-span-7 reveal fade-right">
-              <div className="w-full aspect-[4/3] bg-zinc-100 rounded-2xl overflow-hidden">
+              <div className="w-full aspect-[3/4] bg-zinc-100 rounded-2xl overflow-hidden">
                 <img
                   src="/alfin-photo.jpg"
                   alt="Alfin Dwiyanto"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
+                  style={{ objectPosition: '50% 45%' }}
                 />
               </div>
             </div>
