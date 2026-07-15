@@ -27,9 +27,9 @@ export default function About() {
             <div className="md:col-span-7 reveal fade-right">
               <div className="w-full aspect-[4/3] bg-zinc-100 rounded-2xl overflow-hidden">
                 <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr4KIOp3lEosOj1h_CLDoo6WJ7wMyT8FjqlAzY4Wrc-R2h4IxhQmXNyTH0_qbGTXiSTAx2iQ8c6yHsBMyqN2F9CRqQNIq30JoxQ60HRCuoQe1Hh5aHag86aNbgkZDdrbTuh2hQG5zmkNYOmCaftQL6aJO4-xhTwadW0-_yW9wAoRt4ExEGxumKBVm2ZWt5nhHeidStHB93BnlzkJopDI-TpD50ejVfNlrAh5D2i_l6BCqZiApHlHs0Jg9ltnGMJcmx7g"
+                  src="/alfin-photo.jpg"
                   alt="Alfin Dwiyanto"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
