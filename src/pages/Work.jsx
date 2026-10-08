@@ -17,11 +17,7 @@ export default function Work() {
     { id: 'jaket-kulit-garut',  location: 'Garut, Indonesia',   year: '2026' },
     { id: 'bittersweet',        location: 'Bandung, Indonesia', year: '2026' },
     { id: 'warung-katenjo',     location: 'Garut, Indonesia',   year: '2026' },
-    { id: 'machain',            location: 'Indonesia', year: '2023' },
-    { id: 'twice',              location: 'Spain',     year: '2024' },
-    { id: 'aanstekelijk',       location: 'Netherlands', year: '2023' },
-    { id: 'base-create',        location: 'Hong Kong', year: '2023' },
-    { id: 'avvr',               location: 'Netherlands', year: '2023' },
+    { id: 'machain',            location: 'Indonesia', year: '2023' }
   ];
 
   const designCount = workItems.filter(({ id }) => PROJECT_DATA[id]?.category === 'design').length;

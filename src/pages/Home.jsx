@@ -2,6 +2,7 @@ import TransitionLink from '../components/TransitionLink';
 import Header from '../components/Header';
 import { useEffect, useRef } from 'react';
 import useScrollReveal from '../hooks/useScrollReveal';
+import { PROJECT_DATA } from '../data/projects';
 
 export default function Home() {
   const row1Ref = useRef(null);
@@ -99,7 +100,7 @@ export default function Home() {
         </div>
         <div className="flex justify-center py-24">
           <TransitionLink className="px-12 py-6 border border-zinc-300 rounded-full text-lg hover:bg-dennis-dark hover:text-white transition-colors relative" to="/work">
-            More work <sup className="text-xs opacity-60">12</sup>
+            More work <sup className="text-xs opacity-60">{Object.keys(PROJECT_DATA).length}</sup>
           </TransitionLink>
         </div>
       </section>
